@@ -56,7 +56,9 @@ namespace LH_PETS
                     "User Id=sa;Password=12345;" +
                     "Server=localhost\\SQLEXPRESS;" +
                     "Database=vendas;" +
-                    "Trusted_Connection=False;"
+                    "Trusted_Connection=False;" +
+                    "TrustServerCertificate=True;"
+                    
                 );
 
                 using (SqlConnection conn = new SqlConnection(builder.ConnectionString))
